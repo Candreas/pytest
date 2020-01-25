@@ -1,6 +1,16 @@
 import unittest
+from sum import Sum
+import pytest
+
+
+
 
 class TestStringMethods(unittest.TestCase):
+
+
+    def test_sum (self):
+        tsum= Sum(10)
+        assert  tsum.add() == 10
 
     def test_upper(self):
         self.assertEqual('foo'.upper(), 'FOO')
@@ -16,6 +26,6 @@ class TestStringMethods(unittest.TestCase):
         with self.assertRaises(TypeError):
             s.split(2)
 
+
 if __name__ == '__main__':
     unittest.main()
-
