@@ -1,15 +1,10 @@
 import pytest
 
+
 class Sum():
 
-    def __init__(self, a):
-        self.a = a
+    def __init__(self):
+         print("INIT Sum")
 
-
-    print('saldjsalkdjsla')
-    def add(self):
-        return self.a
-
-
-
-
+    def add(self, a, b):
+        return (a + b)
