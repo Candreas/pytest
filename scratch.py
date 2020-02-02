@@ -1,5 +1,6 @@
 import unittest
 from sum import Sum
+import time
 import pytest
 
 
@@ -16,7 +17,9 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual('foo'.upper(), 'FOO')
 
     def test_isupper(self):
+        time.sleep(2)
         self.assertTrue('FOO'.isupper())
+
         self.assertFalse('Foo'.isupper())
 
     def test_split(self):
