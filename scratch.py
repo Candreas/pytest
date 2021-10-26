@@ -10,7 +10,7 @@ class TestStringMethods(unittest.TestCase):
 
 
     def test_sum (self):
-        tsum= Sum()
+        tsum=  Sum()
         assert  tsum.add(10,10) == 20
 
     def test_upper(self):
